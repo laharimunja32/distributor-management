@@ -1,0 +1,219 @@
+/* Page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+/* Main container */
+.container {
+  max-width: 1150px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Main heading */
+h1 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+/* Section headings */
+h2 {
+  color: #1e3a8a;
+  font-size: 21px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* Required star */
+.required {
+  color: #dc2626;
+}
+
+/* Inputs */
+input,
+select {
+  width: 100%;
+  padding: 11px 12px;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 14px;
+  background: white;
+}
+
+/* Input focus */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Add / Update button */
+form button {
+  grid-column: 2;
+  justify-self: end;
+  padding: 11px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Button hover */
+form button:hover {
+  background: #1d4ed8;
+}
+
+/* Search section */
+.search-box {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  margin-top: 3px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table header */
+th {
+  background: #1e3a8a;
+  color: white;
+  padding: 13px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Table cells */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 14px;
+}
+
+/* Row hover */
+tbody tr:hover {
+  background: #f1f5f9;
+}
+
+/* Action buttons */
+td button {
+  padding: 7px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Edit button */
+td button:first-child {
+  background: #f59e0b;
+  color: white;
+}
+
+td button:first-child:hover {
+  background: #d97706;
+}
+
+/* Delete button */
+td button:last-child {
+  background: #dc2626;
+  color: white;
+}
+
+td button:last-child:hover {
+  background: #b91c1c;
+}
+
+/* Validation messages */
+small {
+  display: block;
+  margin-top: 5px;
+  color: #dc2626;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .container {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form button {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Active status */
+.status-badge.active {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+/* Inactive status */
+.status-badge.inactive {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
